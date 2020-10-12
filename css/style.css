@@ -1,0 +1,57 @@
+body{
+  background-color: #000011;
+  padding: 50px;
+}
+hr{
+  height: 2px;
+  background-color: #337ab7;
+}
+h3, h4, h5 {
+  font-weight: bold;
+  padding: 5px;
+}
+p{
+  color: #A6AAB0;
+}
+.konten{
+  background-color: #ffffff;
+  padding: 50px;
+  font-family: sans-serif;
+}
+.konten.profil img{
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+.konten img{
+  width: 150px;
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+.konten .kotak{
+  padding: 10px;
+}
+ul li{
+  list-style-type: none;
+  padding: 0px;
+}
+a{
+  color: #000000;
+  text-align: left;
+}
+a:hover{
+  text-decoration: none;
+  color: #337ab7;
+}
+i .fab{
+  float: left;
+}
+.badge{
+  background: #337ab7;
+}
+.caption{
+  height: 301px;
+}
