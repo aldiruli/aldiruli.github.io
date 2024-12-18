@@ -1,0 +1,268 @@
+.navbar-brand {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.navbar {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  font-weight: 400;
+  text-align: center;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 50px;
+}
+
+.navbar-scrolled{
+  background-color: #030d1a !important;
+}
+
+.navbar-scrolled .navbar-nav .nav-item .nav-link{
+  color: #ddd;
+}
+
+.navbar-scrolled .navbar-nav .nav-item .nav-link:hover
+{
+  color: #fff;
+}
+
+.home-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0; 
+}
+
+.home-section {
+  position: relative;
+  padding: 100px 0;
+  background: url('aldi.jpeg'), linear-gradient(to right, #1c1826, #1c1826);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-attachment: fixed;
+  color: #e3e3e3; 
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  text-align: left;
+  padding-top: 30px;
+}
+
+.home-section h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+
+.home-section p {
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+}
+
+.home-section .btn-secondary{
+  background-color: #0B1D33;
+  border-color: #0B1D33;
+  color: #ddd;
+  margin-bottom: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.home-section .btn-secondary:hover,
+.home-section .btn-secondary:active,
+.home-section .btn-secondary:focus {
+  background-color: #82A5CB;
+  border-color: #add8e6;
+  color: #000;
+}
+
+.about-section {
+  padding: 100px 0;
+  background-color: #1c1826; 
+}
+.about-section h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #e3e3e3;
+  text-align: center;
+}
+.image-box {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.image-box img {
+  max-width: 100%; 
+  height: 200px; 
+  display: block; 
+  margin: auto; 
+  transition: transform 0.5s ease-out;
+}
+
+.image-box:hover img {
+  transform: translateY(-30%);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-out;
+}
+
+.image-box:hover .overlay {
+  transform: translateY(0);
+}
+
+.overlay h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.overlay p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.card-text{
+  padding-top: 5px;
+}
+.fa-whatsapp:before{
+  text-align: right;
+  color: green;
+}
+
+.fa-whatsapp{
+  text-align: right;
+  color: green;
+}
+
+.new-section {
+  padding: 100px 0;
+  background-color: #1c1826;
+  color: #ddd;
+}
+
+.new-section h1{
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #e3e3e3;
+  text-align: center;
+}
+
+.new-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; 
+}
+
+.new-section .image-besar{
+  width: 100%;
+  height: 88%;
+  border-radius: 8px; 
+}
+
+.new-section .col-md-12.mb-4 {
+  margin-bottom: 20px;
+}
+
+.social-icons {
+list-style: none;
+padding: 0;
+}
+
+.social-icons li {
+display: inline-block;
+margin-right: 10px;
+}
+
+.social-icons a {
+color: #f0f0f0;
+font-size: 24px;
+transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+color: #f4a2ca; 
+}
+
+
+.footer-section {
+padding: 50px 0;
+background-color: #030d1a; 
+color: #f0f0f0; 
+}
+
+.footer-section p {
+font-size: 16px;
+}
+
+.footer-section a {
+color: #f0f0f0;
+text-decoration: none;
+margin: 0 15px;
+}
+
+.footer-section a:hover {
+text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+  .home-section {
+    background-size: cover;
+  }
+  .home-section .text{
+    background-color: rgba(17, 17, 27, 0.7);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+  }
+  .other-products-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .other-products-slider .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .other-products-slider .slick-prev,
+  .other-products-slider .slick-next {
+    display: none; 
+  }
+
+  .other-products-slider .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+}
