@@ -164,6 +164,24 @@
   color: green;
 }
 
+.skills{
+  padding: 50px;
+  background-color: #1c1826;
+  color: #ddd;
+  text-align: center;
+}
+
+.skills h1{
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #e3e3e3;
+  text-align: center;
+}
+.skills .kolom{
+  margin: 70px;
+}
+
 .new-section {
   padding: 100px 0;
   background-color: #1c1826;

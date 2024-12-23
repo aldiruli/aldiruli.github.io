@@ -65,28 +65,30 @@ $(document).ready(function() {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const animatedElements = document.querySelectorAll('.animate__animated');
-  
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      const inAnimation = entry.target.getAttribute('data-animate-in'); 
-      const outAnimation = entry.target.getAttribute('data-animate-out'); 
-      
-      if (entry.isIntersecting) {
-        entry.target.classList.add(inAnimation); 
-        if (outAnimation) {
-          entry.target.classList.remove(outAnimation);
-        }
-      } else {
-        if (outAnimation) {
-          entry.target.classList.add(outAnimation);
-        }
-        entry.target.classList.remove(inAnimation);
-      }
-    });
-  });
+  const animatedElements = document.querySelectorAll(".animate__animated");
 
-  animatedElements.forEach(el => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const inAnimation = entry.target.getAttribute("data-animate-in");
+
+        if (entry.isIntersecting) {
+          entry.target.classList.add(inAnimation);
+
+          entry.target.addEventListener(
+            "animationend",
+            () => {
+              entry.target.classList.remove(inAnimation);
+            },
+            { once: true }
+          );
+        }
+      });
+    },
+  );
+
+  animatedElements.forEach((el) => {
     observer.observe(el);
   });
 });
+
