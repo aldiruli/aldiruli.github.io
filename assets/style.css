@@ -49,7 +49,7 @@
 .home-section {
   position: relative;
   padding: 100px 0;
-  background: url('aldi.jpeg'), linear-gradient(to right, #1c1826, #1c1826);
+  background: url('images/aldi.jpeg'), linear-gradient(to right, #1c1826, #1c1826);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
